@@ -1,0 +1,110 @@
+.l-text {
+    font-size: 40px;
+}
+
+.mid-text {
+    font-size: 36px;
+}
+
+.smid-text {
+    font-size: 30px;
+}
+
+.sml-text {
+    font-size: 24px;
+}
+
+.sm-text {
+    font-size: 16px;
+}
+
+.smx-text {
+    font-size: 18px;
+}
+.p-bg{
+    background-color: #0175CA;
+    transition: all .3s;
+}
+.p-bg:hover{
+    background-color: #264478;
+    transition: all .3s;
+}
+.y-bg {
+    background-color: #FAA21B;
+}
+
+.g-bg {
+    background-color: #00A886;
+}
+
+.r-bg {
+    background-color: #F36B79;
+}
+.p-bg{
+    background-color: #0175CA;
+}
+.grey-color{
+    color: #575757;
+}
+.blue-btn{
+    background-color: #0175CA;
+}
+
+.darkblue-btn{
+    background-color: #264478;
+}
+.table-btn {
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.p-buttom {
+    background-color: #0175CA;
+    color: #fff;
+    font-family: 'GB';
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 15px 30px;
+    transition: all .3s;
+    border: 1px solid #0175CA;
+}
+
+.p-buttom:hover {
+    background-color: #264478;
+    transition: all .3s;
+    color: #fff;
+}
+
+.S-buttom {
+    background-color: #fff;
+    color: #0175CA;
+    font-family: 'GB';
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 15px 30px;
+    transition: all .3s;
+    border: 1px solid #0175CA;
+}
+
+.S-buttom:hover {
+    background-color: #d4d6da;
+    transition: all .3s;
+
+}
+.link-size{
+    font-size: 20px;
+}
+
+.cta-button{
+    font-size: 20px;
+    font-family: 'GB';
+    opacity: .9;
+    color: #fff;
+    transition: all .3s;
+}
+.cta-button:hover{
+    opacity: 1;
+    transition: all .3s;
+    color: #fff;
+}

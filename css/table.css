@@ -1,0 +1,154 @@
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+
+table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+
+table th {
+    background-color: #0175CA !important;
+    color: #fff !important;
+    font-size: 22px !important;
+    text-align: start !important;
+    font-family: 'GB' !important;
+}
+
+table.table-border {
+    border: 1px #D2DCE6 !important;
+    border-bottom: 1px solid #D2DCE6 !important;
+}
+
+table.dataTable.no-footer {
+    border: 1px #D2DCE6 !important;
+    border-bottom: 1px solid #D2DCE6 !important;
+}
+
+table th {
+    text-align: start !important;
+}
+
+table td {
+    text-align: start !important;
+}
+
+
+
+table th,
+table td {
+    padding: .625em;
+    text-align: center;
+}
+
+table th {
+    font-size: .85em;
+
+}
+
+.update-btn {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+    transition: transform .3s ease-in-out;
+    margin-left: 10px;
+}
+
+.update-btn:hover {
+
+    transform: rotate(180deg);
+
+
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    table {
+        border: 0;
+    }
+
+    table caption {
+        font-size: 1.3em;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+
+    table td::before {
+        /*
+* aria-label has no advantage, it won't be read inside a table
+content: attr(aria-label);
+*/
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
+
+.paginate_button.first,
+.paginate_button.previous,
+.paginate_button.next,
+.paginate_button.last {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 1.5em;
+    padding: .5em 1em;
+    margin-left: 2px;
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+    color: #ffff !important;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    background-color: #0175CA !important;
+}
+
+
+
+.paginate_button {
+    background-color: #fff !important;
+    color: #0175CA !important;
+}

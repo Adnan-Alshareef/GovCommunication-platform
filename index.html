@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GACA</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="/images/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="./libraries/bootstrap-5.1.3/css/bootstrap.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy.css">
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy-en.css">
+    <link rel="stylesheet" href="./css/texture.css">
+   <link rel="stylesheet" href="./libraries/datatable/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="./libraries/datatable/css/datatable-custom-theme.css">
+    <link rel="stylesheet" href="./css/table.css">
+    <link rel="stylesheet" href="./css/style-mine.css">
+    
+
+</head>
+
+<body>
+    <div class="Pgbody" dir="rtl">
+        <div>
+            <div class="white-row">
+                <div class="container white-row">
+
+                    <div class="Logo-sec">
+                        <div class="">
+                            <img src="./images/GACA Logo 1.png" alt="">
+                        </div>
+                        <div class="Pcolor Pfont Lsize">
+                            منصة التواصل الحكومي
+                        </div>
+                    </div>
+    
+                    <div class="support-sec">
+                        <div>
+                            <a href="#" class="support-item">
+                                <div class="support-icon">
+                                    <img src="./images/24-hours-phone-service 2.png" alt="">
+                                </div>
+                                <div class="Scolor Lfont Ssize">
+                                    Complaints & Suggestions
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="support-item">
+                                <div class="support-icon">
+                                    <img src="./images/Saudi-symbol.png" alt="">
+                                </div>
+                                <div class="Scolor Lfont Ssize">
+                                    Laws & Regulations
+                                </div>
+                            </a>
+    
+                        </div>
+    
+    
+    
+    
+                    </div>
+                </div>
+            </div>
+      
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light" style="display: block !important;">
+                <div class="container">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav main-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link notifications-holder" href="#">طلباتي <span
+                                        class="notifications">2</span></a>
+                            </li>
+                        </ul>
+                        <div class="me-auto">
+                            <div class="nav-cta-holder nav-cta-sec">
+                                <div class="nav-cta">
+                                    <div class="user-name">
+                                        أحمد عبدالرحمن
+                                    </div>
+                                    <div>
+                                        <button class="logout-button">
+                                            تسجيل خروج
+                                        </button>
+                                    </div>
+                                    <button class="menu-btn">☰</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="pushy pushy-left">
+                <div class="pushy-content">
+                    <a href="#" class="mobile-x">×</a>
+                    <div id="op-mobile" class="text-center">
+                    </div>
+                    <ul class="mobile-menu">
+                        <li><a href="./00_Register_ar.html" class="lang_switcher_button">العربية</a></li>
+                        <li class="active"><a href="#">My Drones</a></li>
+                        <li><a href="#">My Licences</a></li>
+
+
+                        <li><a href="#">Contact Us</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <main class="mb-5">
+            <div class="container">
+                <div dir="rtl">
+                    <div>
+                        <div class="row justify-content-center ">
+                            <div class="col-xl-4 col-md-6 pt-5  ">
+                                <div class="statistics-card">
+                                    <div class="statistics-card-inner">
+                                        <div class="chart-div">
+                                            <canvas id="myChart"></canvas>
+                                            <div id="centerText" class="chart-holder">
+                                                <div class="doughnutchart greendoughnut">42%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="statistics-info">
+                                            <div class="Pfont greenColor total-req">21</div>
+                                            <div class="darkcolor Rfont total-cap">الطلبات المكتملة</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="col-xl-4 col-md-6 pt-5">
+                                <div class="statistics-card">
+                                    <div class="statistics-card-inner">
+                                        <div class="chart-div">
+                                            <canvas id="myChart_2"></canvas>
+                                            <div id="centerText" class="chart-holder">
+                                                <div class="yellowColor  doughnutchart">20%</div>
+                                            </div>
+                                        </div>
+                                        <div class="statistics-info">
+                                            <div class="Pfont yellowColor total-req">21</div>
+                                            <div class="darkcolor Rfont total-cap">الطلبات المكتملة</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-xl-4 col-md-6 pt-5">
+                                <div class="statistics-card">
+                                    <div class="statistics-card-inner">
+                                        <div class="chart-div">
+                                            <canvas id="myChart_3"></canvas>
+                                            <div id="centerText" class="chart-holder">
+                                                <div class="reddoughnut  doughnutchart">90%</div>
+                                            </div>
+                                        </div>
+                                        <div class="statistics-info">
+                                            <div class="Pfont redColor total-req">21</div>
+                                            <div class="darkcolor Rfont total-cap">الطلبات المكتملة</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="sec-margin">
+                            <div class="two-el-row">
+                                <div class="mid-text Pcolor Pfont">
+                                    أحدث الطلبات
+                                </div>
+                                <div>
+                                    <a href="#" class="p-buttom">
+                                        طلب جديد
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mt-5">
+                                <table dir="rtl" class="mb-5 table-border" id="myTable">
+
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">رقم الطلب</th>
+                                            <th scope="col">نوع الطلب</th>
+                                            <th scope="col">الطلب</th>
+                                            <th scope="col">تاريخ التقديم</th>
+                                            <th scope="col">الحالة</th>
+                                            <th scope="col"> تحديث</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="clickable-row" data-url="https://example.com/page1">
+                                            <td data-label="رقم الطلب">252255544221</td>
+                                            <td data-label="نوع  الطلب">شركة مسجلة بالمملكة</td>
+                                            <td data-label="الطلب">الطلب</td>
+                                            <td data-label="تاريخ التقديم">تاريخ التقديم</td>
+                                            <td data-label="الحالة"><span class="sm-text y-bg Pfont table-btn">تحت
+                                                    الاجراء</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">252255544221</td>
+                                            <td data-label="نوع  الطلب">وقف</td>
+                                            <td data-label="الطلب">تأخر استلام إيصال الدفع</td>
+                                            <td data-label="تاريخ التقديم">12/6/2024</td>
+                                            <td data-label="الحالة"><span class="sm-text y-bg Pfont table-btn">تحت
+                                                    الاجراء</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">252255544221</td>
+                                            <td data-label="نوع  الطلب">شركة غير مسجلة بالمملكة</td>
+                                            <td data-label="الطلب">طلب تظلم</td>
+                                            <td data-label="تاريخ التقديم ">12/6/2024</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">252255544221</td>
+                                            <td data-label="نوع  الطلب">شركة غير مسجلة بالمملكة</td>
+                                            <td data-label="الطلب">طلب تظلم</td>
+                                            <td data-label="تاريخ التقديم ">12/6/2024</td>
+                                            <td data-label="الحالة"><span class="sm-text r-bg Pfont table-btn">
+                                                    مرفوض </span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" data-label="رقم الطلب">Visa - 3412</td>
+                                            <td data-label="نوع  الطلب">02/01/2016</td>
+                                            <td data-label="الطلب">$842</td>
+                                            <td data-label="تاريخ التقديم">01/01/2016 - 01/31/2016</td>
+                                            <td data-label="الحالة"><span class="sm-text g-bg Pfont table-btn">
+                                                    مكتمل</span></td>
+                                            <td data-label="تحديث">
+                                                <button class="update-btn">
+                                                    <img src="./images/Sync.png" alt="Update" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div class='mb-5'>
+                            <div class="two-el-row mt-5 mb-5">
+                                <div class="total-req-holder">
+                                    <div class="total-req Pfont l-text Scolor">
+                                        25
+                                    </div>
+                                    <div class="smx-text Lfont">
+                                        اجمالي الطلبات
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="S-buttom">
+                                        طلب جديد
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+        </main>
+
+        <footer class="mt-5">
+            <p><span>&copy; All rights reserved to</span> <span><img src="./images/GACA LogoXs 1.png" alt=""></span>
+                <span>General Authority of Civil Aviation.</span>
+            </p>
+        </footer>
+
+    </div>
+    <script src="./libraries/bootstrap-5.1.3/js/bootstrap.js"></script>
+    <script src="./libraries/jquery-3.6.0/js/jquery.js"></script>
+    <script src="./libraries/pushymenu/js/pushy.js"></script>
+    <script src="./libraries/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="./libraries/chart.js/main_chart.js"></script>
+
+    <script src="./js/main.js"></script>
+
+ 
+
+</body>
+
+</html>
