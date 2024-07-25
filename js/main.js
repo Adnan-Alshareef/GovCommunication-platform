@@ -1,3 +1,5 @@
+
+
 const navbar = document.getElementById('navbar');
 const navbarOffset = navbar.offsetTop;
 

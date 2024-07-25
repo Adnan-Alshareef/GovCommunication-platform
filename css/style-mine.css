@@ -9,7 +9,6 @@ body {
     position: relative;
     font-family: 'GR';
     background-color: #fff;
-    overflow-x: hidden;
 }
 
 .Pgbody {
@@ -280,8 +279,9 @@ a:active {
 .sec-margin {
     margin-top: 60px;
 }
+
 .subsec-margin {
-   margin: 40px 0;
+    margin: 40px 0;
 }
 
 .two-el-row {
@@ -301,13 +301,16 @@ a:active {
     .nav-cta-sec {
         justify-content: flex-start !important
     }
-    .support-sec{
+
+    .support-sec {
         display: none;
     }
-    .user-name{
+
+    .user-name {
         display: none;
     }
-    .logout-button{
+
+    .logout-button {
         display: none;
     }
 }
@@ -342,30 +345,31 @@ a:active {
     background-color: #dbdada;
 }
 
-.white-page{
+.white-page {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: rgba(39, 68, 1210, 0.1) 0px 10px 20px;}
+    box-shadow: rgba(39, 68, 1210, 0.1) 0px 10px 20px;
+}
 
-.p-standard{
+.p-standard {
     padding: 40px;
 }
 
-.form-title{
+.form-title {
     display: flex;
-   align-items: center;
-   background-color: #ECF5FC;
-   padding: 8px;
-   border-right: 3px solid #0175CA;
+    align-items: center;
+    background-color: #ECF5FC;
+    padding: 8px;
+    border-right: 3px solid #0175CA;
 }
 
-.form-label{
+.form-label {
     font-family: 'GB';
     font-size: 18px;
     color: #264478;
 }
 
-.name-holder{
+.name-holder {
     background-color: #F3F5F9;
     padding: 8px;
     font-size: 18px;
@@ -375,56 +379,72 @@ a:active {
 
 textarea {
     resize: none;
-  }
+}
 
-  .cta-sec{
+.cta-sec {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  #myTable tbody tr.odd {
+#myTable tbody tr.odd {
     background-color: #f8f8f8;
 }
 
 #myTable tbody tr.even {
     background-color: #ffffff;
 }
+
 .bg-image {
     background-image: url('../images/Saudi-Flag.png');
     background-size: cover;
     background-position: center center;
-  }
-  
-  .login-bg{
-      background-color: #FCFCFD;
-  }
-  .login{
-      min-height: 100vh;
-  }
-  .chart-holder{
+}
+
+.login-bg {
+    background-color: #FCFCFD;
+}
+
+.login {
+    min-height: 100vh;
+}
+
+.chart-holder {
     position: absolute;
-    top: 50%; left: 50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
+}
 
-  .chart-div{
+.chart-div {
     width: 120px;
     height: 120px;
     position: relative;
-  }
-  .doughnutchart{
+}
+
+.doughnutchart {
     font-size: 26px;
     font-family: 'GB';
-  }
-  .greendoughnut{
+}
+
+.greendoughnut {
     color: #00A886;
-  }
-  .yellodoughnut{
+}
+
+.yellodoughnut {
     color: #FAA21B;
-  }
-  .reddoughnut{
+}
+
+.reddoughnut {
     color: #EF3A4C;
 
-  }
+}
+
+#datepicker {
+    background: url(../images/cal_icon_blue.png) no-repeat 6% 50%;
+}
+
+#attachmentsSection {
+    display: none;
+}
